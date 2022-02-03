@@ -70,7 +70,8 @@ img {
 .header-link {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .header-item:not(:last-child) {
@@ -120,7 +121,6 @@ img {
 
 .header-icon {
   margin-right: 10px;
-  align-self: baseline;
   fill: currentColor;
 }
 
@@ -210,6 +210,8 @@ img {
 .our-team-text-placement {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .our-team-content {
@@ -219,8 +221,6 @@ img {
 .our-team-social-list {
   display: flex;
   margin-top: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .our-team-social-iteam + .our-team-social-iteam {
@@ -303,8 +303,10 @@ img {
 
 .specialities-icon {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f5f4fa;
-  padding: 25px 100px;
+  height: 120px;
   margin-bottom: 30px;
 }
 
@@ -394,12 +396,13 @@ img {
 
 .regular-customers-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 16px 32px;
   color: var(--icon-color);
 }
 
@@ -446,8 +449,11 @@ img {
   box-sizing: border-box;
 }
 
-.project-item:focus,
-.project-item:hover {
+.project-item-effect {
+  display: block;
+}
+.project-item-effect:focus,
+.project-item-effect:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -483,6 +489,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  padding: 6px 22px;
 }
 .filter-buttons:hover,
 .filter-buttons:focus {
@@ -581,7 +588,7 @@ img {
 
 .footer-connect-wrap {
   display: flex;
-  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .join-us {
